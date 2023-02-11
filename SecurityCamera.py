@@ -24,7 +24,7 @@ while True:
     # Save the frame as an image file if motion is detected
     if ratio > threshold:
         current_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        file_name = "/home/timopiPictures/captured_image_{}.jpg".format(current_time)
+        file_name = "/home/timopi/Pictures/captured_image_{}.jpg".format(current_time)
         cv2.imwrite(file_name, frame)
         print("Motion detected! Image saved as {}".format(file_name))
         time.sleep(0.5)
